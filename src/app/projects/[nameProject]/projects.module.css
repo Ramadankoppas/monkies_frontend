@@ -1,0 +1,187 @@
+.viewServiceDiv{
+  width:90%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.viewServiceDiv > div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.imageHeight{
+  width: fit-content;
+  max-height: 80px;
+}
+.imageWidth{
+  max-width: 90%;
+}
+.viewServiceDiv > div > h2 , .viewServiceDiv > div > p , .viewServiceP , .viewServiceP1{
+  font-family: 'MediumFont';
+  margin-top: 20px;
+  font-size: 18px;
+}
+.viewServiceDiv > div > h2 {
+  color: var(--mainTextColor);
+  font-size: 20px;
+}
+.viewServiceP1{
+  width: 100%;
+  margin-top: 0px !important;
+  line-height: 1.9;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+.viewServiceP1 , .viewServiceP{
+  text-align: left;
+  font-size: 16px !important;
+  color: var(--secoundTextColor);
+}
+.mainProjects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section1Projects , .section2Projects{
+  width: 95%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 150px;
+}
+.section1Projects > img{
+  max-width: 100%;
+}
+.section2Projects > img{
+  width: 85%;
+  margin: auto;
+}
+.section1Projects > .Mobile{
+  width: 50%;
+  transform: rotate(20deg);
+  margin: auto;
+}
+.section2Projects > .Mobile{
+  width: 50%;
+  transform: rotate(10deg);
+  margin: auto;
+}
+.section2Projects > .Mobile:first-child{
+  transform: rotate(-15deg);
+}
+@media(max-width : 1300px){
+  .viewServiceP1{
+    font-size: 15px !important;
+  }
+}
+@media(max-width : 1190px){
+  .viewServiceDiv > div > h2 , .viewServiceDiv > div > p{
+    font-size: 15px;
+  }
+  .viewServiceP1 , .viewServiceP{
+    font-size: 13px !important;
+  }
+  .section1Projects > img{
+    width: 90%;
+  }
+}
+@media(max-width : 1090px){
+  .viewServiceP1 , .viewServiceP{
+    font-size: 12px !important;
+  }
+}
+@media(max-width : 1000px){
+  .section1Projects{
+    grid-template-columns: 1fr;
+  }
+  .viewServiceP1 , .viewServiceP{
+    font-size: 17px !important;
+  }
+  .section1Projects > img{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .section2Projects > img{
+    width: 90%;
+  }
+  .section1Projects .Mobile{
+    width: 40% !important;
+  }
+}
+@media(max-width : 850px){
+  .viewServiceDiv > div > p , .viewServiceDiv > div > h1{
+    font-size: 13px;
+  }
+  .viewServiceP1 , .viewServiceP{
+    font-size: 15px !important;
+    margin-left: 10px;
+  }
+  .viewServiceP{
+    margin-left: 0px;
+  }
+  .imageHeight{
+    width: fit-content;
+    max-height: 60px;
+  }
+  .imageWidth{
+    max-width: 60%;
+  }
+}
+@media(max-width : 750px){
+  .viewServiceDiv > div > p{
+    font-size: 12px;
+  }
+  .viewServiceP1 , .viewServiceP{
+    font-size: 13px !important;
+  }
+  .imageHeight{
+    width: fit-content;
+    max-height: 80px;
+  }
+  .imageWidth{
+    max-width: 80%;
+  }
+  .section2Projects{
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+  }
+  .section1Projects > img{
+    width: 80%;
+  }
+  .section2Projects > img{
+    width: 80%;
+    border-radius: 20px;
+  }
+
+}
+@media(max-width : 630px){
+  .viewServiceDiv{
+    grid-template-columns: 1fr;
+  }
+  .viewServiceDiv > div{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .viewServiceDiv > div > p{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media(max-width : 600px){
+  .section1Projects > img{
+    width: 90%;
+  }
+  .section1Projects > .Mobile{
+    width: 50% !important;
+  }
+  .section2Projects > img{
+    width: 90%;
+  }
+}
