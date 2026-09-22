@@ -26,11 +26,5 @@ export const NavProvider = ({ children }) => {
        
     );
 };
-export const metadata = {
-  title: "Monkies",
-  icons: {
-    icon: "/assets/icons/logo_small.png",
-  },
-};
 
 export const useRouterContext = () => useContext(RouterContext);
