@@ -28,8 +28,15 @@ export default function Projects(){
             setLoading(true)
             setError('')
             try {
+                // Normalize the encoded route segment before building the API URL.
+                let projectName = name_proj
+                try {
+                    projectName = decodeURIComponent(name_proj)
+                } catch (error) {
+                    if (!(error instanceof URIError)) throw error
+                }
                 const response = await fetch(
-                    `https://monkies.net/api/projects/${encodeURIComponent(name_proj)}/`,
+                    `https://monkies.net/api/projects/${encodeURIComponent(projectName)}/`,
                     {
                         headers: { Accept: 'application/json' },
                         cache: 'no-store',
